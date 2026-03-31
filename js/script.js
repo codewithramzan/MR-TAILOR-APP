@@ -23,7 +23,7 @@ function header() {
 
     <nav class="nav js-nav">
     <a href="index.html">Home</a>
-    <a href="nap.html">Measure</a>
+    <a href="measure.html">Measure</a>
     <a href="about_us.html">About</a>
     <a href="contact.html">Contact</a>
     <button class="theme-toggle js-theme-toggle">
