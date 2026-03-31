@@ -1,3 +1,5 @@
+
+
 function renderContact() {
     let contactHTML =`
         <div class="container">
@@ -29,5 +31,6 @@ function renderContact() {
 
     `;
     document.querySelector('.js-contact-section').innerHTML=contactHTML;
+
 }
 renderContact();

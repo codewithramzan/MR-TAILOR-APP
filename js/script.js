@@ -26,8 +26,8 @@ function header() {
     <a href="measure.html">Measure</a>
     <a href="about_us.html">About</a>
     <a href="contact.html">Contact</a>
-    <button class="theme-toggle js-theme-toggle">
-        <i class="fa-solid fa-moon"></i>
+    <button class="theme-toggle">
+        <i class="fa-solid fa-moon  js-theme-toggle"></i>
     </button>
     </nav>
     <div class="menu-btn">
@@ -78,6 +78,7 @@ function homebody() {
   `;
   document.querySelector('.js-main').innerHTML = homeHTML;
 }
+
 header();
 menuBtn();
 homebody();
