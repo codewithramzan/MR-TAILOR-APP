@@ -2,34 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/style.css">
-  
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header class="header">
 
 <div class="logo-area">
 <img src="images/home-logo-icon.jpg" class="logo">
-<h2>MR Tailor</h2>
+<h2 id="mr-title">MR Tailor</h2>
 </div>
 
-<nav class="nav">
+<nav class="nav js-nav">
 <a href="index.html">Home</a>
-<a href="nap.html">Measurement</a>
+<a href="nap.html">Measure</a>
 <a href="about_us.html">About</a>
 <a href="contact.html">Contact</a>
+<button class="theme-toggle js-theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+</button>
 </nav>
-
+<div class="menu-btn ">
+<i class="fa fa-bars js-menu-btn"></i>
+</div>
 </header>
-
+<div class="page-wrapper">
     <section class="contact-section">
+    
         <div class="container">
             <h2>Contact Us</h2>
             <p class="subtitle">We would love to hear from you!</p>
-
-            <div class="contact-box">
+            <div id="contact-box">
 
                 <div class="contact-info">
                     <h3>Contact Information</h3>
@@ -53,6 +58,7 @@
             </div>
         </div>
     </section>
+</div>
     <!-- FOOTER -->
 
 <footer>
@@ -60,6 +66,7 @@
 <p>© 2026 MR Tailor | All Rights Reserved</p>
 
 </footer>
+<script src="js/script.js"></script>
 
 </body>
 </html>

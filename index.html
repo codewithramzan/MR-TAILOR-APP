@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>MR Tailor</title>
-
-<link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
@@ -21,18 +21,21 @@
 <h2>MR Tailor</h2>
 </div>
 
-<nav class="nav">
+<nav class="nav js-nav">
 <a href="index.html">Home</a>
-<a href="nap.html">Measurement</a>
+<a href="nap.html">Measure</a>
 <a href="about_us.html">About</a>
 <a href="contact.html">Contact</a>
+<button class="theme-toggle js-theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+</button>
 </nav>
 <div class="menu-btn">
-<i class="fa fa-bars"></i>
+<i class="fa fa-bars js-menu-btn"></i>
 </div>
 
 </header>
-
+<main>
 <!-- HERO SECTION -->
 
 <section class="hero">
@@ -50,7 +53,7 @@
 
 <section class="gallery">
 
-<h2>Our Designs</h2>
+<h2 id="h2">Our Designs</h2>
 
 <div class="gallery-grid">
 
@@ -68,7 +71,7 @@
 </div>
 
 </section>
-
+</main>
 <!-- FOOTER -->
 
 <footer>
@@ -76,6 +79,6 @@
 <p>© 2026 MR Tailor | All Rights Reserved</p>
 
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
