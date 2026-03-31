@@ -37,6 +37,48 @@ function header() {
   `;
   document.querySelector('.header').innerHTML = headerHTML;
 }
+function homebody() {
+  let homeHTML = `
+        <!-- HERO SECTION -->
+
+    <section class="hero">
+
+    <img src="images/hero-image3.png" alt="hero image">
+
+    <div class="hero-text">
+    <h1>Professional Tailoring</h1>
+    <p>Modern designs and perfect fitting for everyone</p>
+    </div>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery">
+
+    <h2 id="h2">Our Designs</h2>
+
+    <div class="gallery-grid">
+
+    <img src="images/image-01.avif">
+    <img src="images/image-02.webp">
+    <img src="images/image-03.jpg">
+    <img src="images/image-04.jpg">
+    <img src="images/image-05.jpg">
+    <img src="images/image-06.jpg">
+    <img src="images/image-04.jpg">
+    <img src="images/image-05.jpg">
+    <img src="images/image-06.jpg">
+    <img src="images/image-06.jpg">
+
+    </div>
+
+    </section>
+  
+  `;
+  document.querySelector('.js-main').innerHTML = homeHTML;
+}
 header();
 menuBtn();
+homebody();
 darktheme();
