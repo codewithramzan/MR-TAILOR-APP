@@ -1,4 +1,4 @@
-
+import { header, darktheme, menuBtn } from "./script.js";
 
 function renderContact() {
     let contactHTML =`
@@ -33,4 +33,7 @@ function renderContact() {
     document.querySelector('.js-contact-section').innerHTML=contactHTML;
 
 }
+header();
+menuBtn();
 renderContact();
+darktheme();

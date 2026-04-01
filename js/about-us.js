@@ -1,3 +1,4 @@
+import { header, menuBtn, darktheme } from "./script.js";
 function aboutUS() {
     let about_us = `
           <h1>MR Tailor Amangarh Nowshera</h1>
@@ -29,4 +30,7 @@ function aboutUS() {
     `;
     document.querySelector('.js-container').innerHTML=about_us;
 }
+header();
+menuBtn();
 aboutUS();
+darktheme();

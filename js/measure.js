@@ -1,3 +1,4 @@
+import { header, darktheme, menuBtn } from "./script.js";
 
 function measureHTML() {
     let measureHTML = `
@@ -90,6 +91,9 @@ function measureHTML() {
 
         </form>
         `;
-    document.querySelector('.js-container').innerHTML=measureHTML;
+    document.querySelector('.js-container').innerHTML= measureHTML;
 }
+header();
+menuBtn();
 measureHTML();
+darktheme();

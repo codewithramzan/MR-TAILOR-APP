@@ -1,5 +1,5 @@
 
- function menuBtn() {
+ export function menuBtn() {
   const menuBtn= document.querySelector('.js-menu-btn');
   const navbar = document.querySelector('.js-nav');
     menuBtn.addEventListener('click', () => {
@@ -7,14 +7,14 @@
     });
  }
 
-function darktheme() { 
+export function darktheme() { 
   const toggleBtn = document.querySelector('.js-theme-toggle');
 
   toggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('dark');
   });
 }
-function header() {
+export function header() {
   let headerHTML = `
       <div class="logo-area">
     <img src="images/home-logo-icon.jpg" class="logo">
@@ -47,13 +47,13 @@ function homebody() {
 
     <div class="hero-text">
     <h1>Professional Tailoring</h1>
-    <p>Modern designs and perfect fitting for everyone</p>
+    <p id="typing"></p>
     </div>
 
     </section>
 
     <!-- GALLERY -->
-
+   <marquee id="slide-para" direction="right">  Best Quality Gents suit <span id="offer"></span> sewing only RS.1300</marquee>
     <section class="gallery">
 
     <h2 id="h2">Our Designs</h2>
@@ -76,10 +76,67 @@ function homebody() {
     </section>
   
   `;
-  document.querySelector('.js-main').innerHTML = homeHTML;
+  let content = document.querySelector('.js-main');
+  if(content){
+    content.innerHTML=homeHTML;
+  }
 }
+//for typing animation
+const words = ["Modern designs and perfect fitting for everyone", "Crafting elegance with every stitch.",
+             "Perfect fit, timeless style.","Precision stitching that defines your style.",
+             "Tailored to fit perfectly, designed to impress."];
+
+let i = 0
+let j = 0
+let currentWord = ""
+let isDeleting = false
+
+function type(){
+ 
+currentWord = words[i];
+const typingElement= document.getElementById("typing");
+ // 🎨 Apply color logic
+  if (i % 2 !== 0) {
+    typingElement.style.color = "yellow";
+  } else {
+    typingElement.style.color = "white";
+  }
+if(isDeleting){
+j--;
+}else{
+j++;
+}
+
+document.getElementById("typing").textContent =
+currentWord.substring(0,j)
+
+if(!isDeleting && j === currentWord.length){
+
+isDeleting = true
+setTimeout(type,1000)
+return
+
+}
+
+if(isDeleting && j === 0){
+
+isDeleting = false
+i++
+
+if(i === words.length){
+i = 0
+}
+
+}
+
+setTimeout(type,120)
+
+}
+
 
 header();
 menuBtn();
 homebody();
+type()
+// typeParagraph();
 darktheme();
