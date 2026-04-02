@@ -95,6 +95,7 @@ function type(){
  
 currentWord = words[i];
 const typingElement= document.getElementById("typing");
+if(!typingElement)return;
  // 🎨 Apply color logic
   if (i % 2 !== 0) {
     typingElement.style.color = "yellow";
@@ -132,11 +133,9 @@ i = 0
 setTimeout(type,120)
 
 }
-
-
 header();
 menuBtn();
 homebody();
 type()
-// typeParagraph();
+
 darktheme();
