@@ -1,1 +1,1 @@
-#This is full stack project for my own shop
+#This is frontend project for my own shop
